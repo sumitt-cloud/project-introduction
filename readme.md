@@ -1,4 +1,4 @@
 # Project - Introduction
 
 
-express node project using routes handling  bootstrap
+express nodejs project using routes handling  with bootstrap and styling using tailwindcss@3
