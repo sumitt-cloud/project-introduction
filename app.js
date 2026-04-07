@@ -13,8 +13,8 @@ app.use(homerouter)
 const detailsrouter = require("./routes/detailsrouter")
 app.use(detailsrouter)
 
-
 app.use(express.static('public'))
+
 
 const PORT = 3005
 app.listen(PORT ,() =>{
