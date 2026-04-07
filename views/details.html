@@ -10,9 +10,16 @@
     Submit your details here :
   </header>
   <form action="/details" method="POST">
-    <input type="text" type="name" placeholder="Enter your name">
-    <input type="text" type="education" placeholder="education">
-    <input type="text" type="number" placeholder="your number">
+    <input type="text" placeholder="Enter your name" name="name">
+    <input type="text" placeholder="Your Education" name="Education">
+    <input type="number"  placeholder="Contact number" name="Contact number">
+    <select aria-label="default select example" >
+      <option disable selected value="">Gender</option>
+     <option value="male">male</option>
+     <option value="female">female</option>
+     <option value="prefer not to say">Prefer not to say</option>
+    </select>
+    <input type="email" name="email" placeholder="name@gmail.com">
     <input type="submit">
   </form>
 </body>
