@@ -8,7 +8,6 @@ const homerouter = express.Router()
 
 homerouter.get('/',(req,res,next) =>{
   res.sendFile(path.join(rootdir,"views","home.html"))
-
 })
 
 module.exports = homerouter
