@@ -1,7 +1,11 @@
+// core module
+const path = require('path')
+
+// external module
 const express = require('express')
 
+// local module
 const rootdir = require('../utils/pathutils')
-const path = require('path')
 
 const detailsrouter = express.Router()
 
