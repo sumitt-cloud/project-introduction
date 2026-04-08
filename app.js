@@ -15,6 +15,8 @@ app.use(detailsrouter)
 
 app.use(express.static('public'))
 
+app.set('view engine','ejs')
+app.set('views','views')
 
 const PORT = 3005
 app.listen(PORT ,() =>{
