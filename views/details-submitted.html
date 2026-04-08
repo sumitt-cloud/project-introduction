@@ -3,20 +3,26 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/output.css">
   <title>Details-Submitted-Sucessfully</title>
 </head>
 <body>
-  <header>
-    Your Details Submitted Sucessfully!
-  </header>
+ <div class="relative isolate bg-gray-900 px-6 py-24 sm:py-32 lg:px-8">
+  <div aria-hidden="true" class="absolute inset-x-0 -top-3 -z-10 transform-gpu overflow-hidden px-36 blur-3xl">
+    <div style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)" class="mx-auto aspect-1155/678 w-288.75 bg-linear-to-tr from-[#ff80b5] to-[#9089fc] opacity-20"></div>
+  </div>
+  <div class="mx-auto max-w-4xl text-center">
+    
+    <p class="mt-2 text-5xl font-semibold tracking-tight text-balance text-white sm:text-6xl">Form Submitted Sucessfully!</p>
+  </div>
+  <p class="mx-auto mt-6 max-w-2xl text-center text-lg font-medium text-pretty text-gray-400 sm:text-xl/8">We keep Your Personal Information. no one can access this.</p>
+  
+      <a href="/" aria-describedby="tier-hobby" class="mt-8 block rounded-md bg-white/10 px-3.5 py-2.5 text-center text-sm font-semibold text-white inset-ring inset-ring-white/5 hover:bg-white/20 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white/75 sm:mt-10">Back to Home</a>
+   
+      <a href="/details" aria-describedby="tier-enterprise" class="mt-8 block rounded-md bg-indigo-500 px-3.5 py-2.5 text-center text-sm font-semibold text-white hover:bg-indigo-400 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500 sm:mt-10">Submit Details Again!</a>
+    </div>
+  </div>
+</div>
 
-  <main>
-    <a href="/">Home</a>
-    <a href="/details">Submit again</a>
-  </main>
-  <!-- <p>Username : <%= data.firstname></p>
-  <p>Email:<%= data.email></p>
-  <p></p>
-  <p></p> -->
 </body>
 </html>
