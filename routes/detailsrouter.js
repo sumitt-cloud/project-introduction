@@ -16,7 +16,6 @@ detailsrouter.get('/details',(req,res,next) =>{
 const formdata =[]
 
 detailsrouter.post('/details',(req,res,next ) =>{
-  console.log("details ", req.body)
   formdata.push(req.body)
   console.log(formdata)
   res.sendFile(path.join(rootdir,'views','details-submitted.html'))
