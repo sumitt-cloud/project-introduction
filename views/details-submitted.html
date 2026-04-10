@@ -4,25 +4,77 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/output.css">
-  <title>Details-Submitted-Sucessfully</title>
+  <script src="https://kit.fontawesome.com/yourkit.js" crossorigin="anonymous"></script>
+  <title>Success</title>
+   <!-- Animation -->
+  <!-- <style>
+    .animate-fade-in {
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style> -->
 </head>
-<body >
- <div class="relative isolate bg-gray-900 px-6 py-24 sm:py-32 lg:px-8">
-  <div aria-hidden="true" class="absolute inset-x-0 -top-3 -z-10 transform-gpu overflow-hidden px-36 blur-3xl">
-    <div style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)" class="mx-auto aspect-1155/678 w-288.75 bg-linear-to-tr from-[#ff80b5] to-[#9089fc] opacity-20"></div>
+
+<body class="bg-gray-900 text-white">
+
+  <!-- Background Glow -->
+  <div class="absolute inset-0 -z-10 animate-fade-in">
+    <div class="absolute top-[-100px] left-[50%] w-[600px] h-[600px] bg-purple-600 opacity-20 blur-3xl rounded-full"></div>
+    <div class="absolute bottom-[-100px] right-[50%] w-[600px] h-[600px] bg-pink-500 opacity-20 blur-3xl rounded-full"></div>
   </div>
-  <div class="mx-auto max-w-4xl text-center">
-    
-    <p class="mt-2 text-5xl font-semibold tracking-tight text-balance text-white sm:text-6xl">Form Submitted Sucessfully!</p>
-  </div>
-  <p class="mx-auto mt-6 max-w-2xl text-center text-lg font-medium text-pretty text-gray-400 sm:text-xl/8">We keep Your Personal Information. no one can access this.</p>
-  
-      <a href="/" aria-describedby="tier-hobby" class="mt-8 block rounded-md bg-white/10 px-3.5 py-2.5 text-center text-sm font-semibold text-white inset-ring inset-ring-white/5 hover:bg-white/20 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white/75 sm:mt-10">Back to Home</a>
-   
-      <a href="/details" aria-describedby="tier-enterprise" class="mt-8 block rounded-md bg-indigo-500 px-3.5 py-2.5 text-center text-sm font-semibold text-white hover:bg-indigo-400 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500 sm:mt-10">Submit Details Again!</a>
+
+  <!-- Main Container -->
+  <div class="min-h-screen flex items-center justify-center px-4">
+
+    <div class="backdrop-blur-xl bg-white/5 border border-white/10 rounded-3xl shadow-2xl p-10 max-w-xl w-full text-center space-y-6 animate-fade-in">
+
+      <!-- Success Icon -->
+      <div class="flex justify-center">
+        <div class="bg-green-500/20 p-6 rounded-full border border-green-400 animate-bounce">
+          <i class="fa-solid fa-check text-green-400 text-4xl"></i>
+        </div>
+      </div>
+
+      <!-- Heading -->
+      <h1 class="text-4xl sm:text-5xl font-bold bg-gradient-to-r from-green-400 to-blue-500 text-transparent bg-clip-text">
+        Submitted Successfully!
+      </h1>
+
+      <!-- Subtext -->
+      <p class="text-gray-400 text-lg">
+        Your data has been securely stored. 🔐 <br>
+        No one else can access it.
+      </p>
+
+      <!-- Buttons -->
+      <div class="flex flex-col sm:flex-row gap-4 justify-center pt-4">
+
+        <a href="/"
+          class="px-6 py-3 rounded-xl bg-white/10 hover:bg-white/20 transition duration-300 font-semibold border border-white/10">
+          ⬅ Back to Home
+        </a>
+
+        <a href="/details"
+          class="px-6 py-3 rounded-xl bg-gradient-to-r from-indigo-500 to-purple-600 hover:scale-105 transition duration-300 font-semibold shadow-lg">
+          🔁 Submit Again
+        </a>
+
+      </div>
+
     </div>
   </div>
-</div>
+
+ 
 
 </body>
 </html>
