@@ -18,6 +18,10 @@ app.use(express.static('public'))
 app.set('view engine','ejs')
 app.set('views','views')
 
+app.use((req,res,next ) => {
+  res.sendFile(path.join(rootdir,"views","error.html"))
+})
+
 const PORT = 3005
 app.listen(PORT ,() =>{
   console.log(`server running at address http://localhost:${PORT}`)
